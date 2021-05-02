@@ -1,0 +1,58 @@
+<div class="container text-center">
+  <div class="row my-5">
+    <div class="col">
+      <h2>你想對誰說幹話？</h2>
+    </div>
+  </div>
+
+  <form method="POST" action="/">
+    <div class="row my-5">
+      <div class="col-sm-4">
+        <div class="card">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+            class="card-img-top img-fluid">
+
+          <label class="card-footer" for="engineer">
+            <input class="form-control" type="radio" id="engineer" name="character" value="engineer" {{ifEqual
+              option.character 'engineer' }}required>
+            工程師
+          </label>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+            class="card-img-top width:">
+          <label class="card-footer" for="designer">
+            <input class="form-control" type="radio" id="designer" name="character" value="designer" {{ifEqual
+              option.character 'designer' }}>
+            設計師
+          </label>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+            class="card-img-top">
+          <label class="card-footer" for="founder">
+            <input class="form-control" type="radio" id="founder" name="character" value="founder" {{ifEqual
+              option.character 'founder' }}>
+            創業家
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-flex align-items-center">
+      <div class="col-2">
+        <button type="submit" class="btn btn-warning btn-lg"><i class="fas fa-comment-dots"></i></button>
+      </div>
+      <div class="col-10">
+        <textarea class="alert alert-warning w-100" role="alert" placeholder="語出驚人"> {{ sentence }} </textarea>
+      </div>
+    </div>
+  </form>
+
+</div>
