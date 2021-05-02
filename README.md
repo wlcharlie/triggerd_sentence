@@ -1,9 +1,10 @@
 # 幹話產生器
 
 ## 開發工具
-Node.js v10.15.0
-Express 4.17.1
-Express-Handlbars 5.3.0
+* Node.js v10.15.0
+* nodemon v2.0.7
+* Express 4.17.1
+* Express-Handlbars 5.3.0
 
 ## 功能
 點選不同角色，再點擊對話氣泡可以產生隨機幹話
@@ -14,7 +15,7 @@ Express-Handlbars 5.3.0
 ## 安裝
 1. 將專案複製到你的電腦上:
    ```sh
-   git clone https://github.com/wlcharlie/triggerd_sentence
+   git clone https://github.com/wlcharlie/triggerd_sentence.git
    ```
 2. 進入到資料夾:
     ```sh
