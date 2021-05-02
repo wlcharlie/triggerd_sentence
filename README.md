@@ -14,7 +14,7 @@ Express-Handlbars 5.3.0
 ## 安裝
 1. 將專案複製到你的電腦上:
    ```sh
-   git clone https://github.com/wlcharlie/triggerd_generator
+   git clone https://github.com/wlcharlie/triggerd_sentence
    ```
 2. 進入到資料夾:
     ```sh
