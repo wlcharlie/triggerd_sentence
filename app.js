@@ -20,9 +20,8 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
   const options = req.body
-  const sentence = wordPackage(options.character)
-  console.log(options, sentence)
-  res.render('index', { options, sentence })
+  const theSentence = wordPackage(options.character)
+  res.render('index', { options, theSentence })
 })
 
 app.listen(4000, () => {
