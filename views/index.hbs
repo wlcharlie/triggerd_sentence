@@ -1,3 +1,4 @@
+{{sentence}}
 <div class="container text-center">
   <div class="row my-5">
     <div class="col">
@@ -13,8 +14,8 @@
             class="card-img-top img-fluid">
 
           <label class="card-footer" for="engineer">
-            <input class="form-control" type="radio" id="engineer" name="character" value="engineer" {{ifEqual
-              option.character 'engineer' }}required>
+            <input class="form-control" type="radio" id="engineer" name="character" value="engineer" required{{#is
+              options.character 'engineer' }}checked{{/is}}>
             工程師
           </label>
         </div>
@@ -25,8 +26,8 @@
           <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
             class="card-img-top width:">
           <label class="card-footer" for="designer">
-            <input class="form-control" type="radio" id="designer" name="character" value="designer" {{ifEqual
-              option.character 'designer' }}>
+            <input class="form-control" type="radio" id="designer" name="character" value="designer" {{#is
+              options.character 'designer' }}checked{{/is}}>
             設計師
           </label>
         </div>
@@ -37,8 +38,8 @@
           <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
             class="card-img-top">
           <label class="card-footer" for="founder">
-            <input class="form-control" type="radio" id="founder" name="character" value="founder" {{ifEqual
-              option.character 'founder' }}>
+            <input class="form-control" type="radio" id="founder" name="character" value="founder" {{#is
+              options.character 'founder' }}checked{{/is}}>
             創業家
           </label>
         </div>
