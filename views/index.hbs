@@ -14,7 +14,7 @@
             class="card-img-top img-fluid">
 
           <label class="card-footer" for="engineer">
-            <input class="form-control" type="radio" id="engineer" name="character" value="engineer" required{{#is
+            <input class="form-control" type="radio" id="engineer" name="character" value="engineer" required {{#is
               options.character 'engineer' }}checked{{/is}}>
             工程師
           </label>
@@ -51,7 +51,7 @@
         <button type="submit" class="btn btn-warning btn-lg"><i class="fas fa-comment-dots"></i></button>
       </div>
       <div class="col-10">
-        <textarea class="alert alert-warning w-100" role="alert" placeholder="語出驚人"> {{ sentence }} </textarea>
+        <textarea class="alert alert-warning w-100" role="alert">{{ sentence }}</textarea>
       </div>
     </div>
   </form>
